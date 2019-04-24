@@ -1,10 +1,12 @@
 <?php
-	$grikiai = 5000;
-	$days = 0;
-	while ($grikiai > 0) {
-		$grikiai -= rand(200,500);
-		$days++;
-	}
-	echo "kiek dienu: ",$days, "<br>";
-	echo "pasibaigs: ", date("Y:m:d", strtotime("+$days days"));
 
+	$months = 24;
+	$carPrice = 30000;
+	$depreciated = 0.02;
+
+	for (; $months > 0 ;) {
+		$carPrice -= $carPrice * $depreciated;
+		$months--;
+	}
+
+	print $carPrice;
