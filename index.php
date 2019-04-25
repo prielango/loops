@@ -1,12 +1,9 @@
 <?php
 
-	$months = 24;
-	$carPrice = 30000;
-	$depreciated = 0.02;
+$arr = [
+	'kiausiniai' => [ 'didelis', 'didelis' ],
+	'baklazanai' => [ 'mazas' ],
+	'grietine' => [ 'didelis indelis' ]
+];
 
-	for (; $months > 0 ;) {
-		$carPrice -= $carPrice * $depreciated;
-		$months--;
-	}
-
-	print $carPrice;
+var_dump($arr);
