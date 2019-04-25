@@ -1,9 +1,9 @@
 <?php
 
 $arr = [
-	'kiausiniai' => [ 'kiausinis' => 'didelis', 'kiausinis' => 'didelis' ],
-	'baklazanai' => [ 'baklazanas' => 'mazas' ],
-	'grietine' => [ 'indelis' => 'didelis' ]
+	'kiausiniai' => [ 'amount' => 2, 'size' => 'didelis' ],
+	'baklazanai' => [ 'amount' => 1 'size' => 'mazas' ],
+	'grietine' => [ 'amount' => 1 'size' => 'mazas' ]
 ];
 
 var_dump($arr);
