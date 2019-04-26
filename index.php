@@ -15,24 +15,38 @@ $draugo = [
 	'dangus',
 	'grazus',
 	'apakina',
-	'baisu'
+	'baisu',
+	'baisu',
+	'baisu',
+	'baisu',
 ];
 
-$bendri = array_intersect($mano, $draugo);
+// $bendri = array_intersect($mano, $draugo);
+
+$bendri = [];
+
+foreach ($mano as $prisiminimas) {
+	if (in_array($prisiminimas, $draugo) && !in_array($prisiminimas, $bendri)) {
+		$bendri[] = $prisiminimas;
+	}
+}
 
 ?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>bla</title>
 </head>
+
 <body>
 	<ul>
-		<?php foreach ($bendri as $value) {
-			print "<li>$value</li>";
-		}; ?> 
-			
+		<?php foreach ($bendri as $value) : ?>
+			<?= "<li>$value</li>"; ?>
+		<?php endforeach; ?>
+
 	</ul>
 </body>
+
 </html>
