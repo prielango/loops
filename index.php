@@ -19,7 +19,6 @@ $draugo = [
 ];
 
 $bendri = array_intersect($mano, $draugo);
-var_dump($bendri);
 
 ?>
 
