@@ -1,24 +1,36 @@
 <?php
 
-$arr = [
-	[ 
-		'first_name' => 'Petras',
-		'last_name' => 'Pizdzius',
-		'thing' => 'telefonas',
-		'status' => 'prapistas'
-	 ],
-	[
-		'first_name' => 'Tomas',
-		'last_name' => 'Ablomas',
-		'thing' => 'buljonas',
-		'status' => 'naudojamas'
-	],
-	[ 
-		'first_name' => 'Ana',
-		'last_name' => 'Shitkova',
-		'thing' => 'rulonas',
-		'status' => 'pasibaiges'
-	]
+$mano = [
+	'saule',
+	'sviecia',
+	'dangus',
+	'dumai',
+	'tamsu',
+	'baisu'
 ];
 
-var_dump($arr);
+$draugo = [
+	'saule',
+	'sviecia',
+	'dangus',
+	'grazus',
+	'apakina',
+	'baisu'
+];
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bla</title>
+</head>
+<body>
+	<ul>
+		<?php foreach ($mano as $key => $value) {
+			print $value === $draugo[$key] ? "<li>$value</li>" : '';
+		}; ?> 
+			
+	</ul>
+</body>
+</html>
