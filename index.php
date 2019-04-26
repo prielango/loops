@@ -18,6 +18,9 @@ $draugo = [
 	'baisu'
 ];
 
+$bendri = array_intersect($mano, $draugo);
+var_dump($bendri);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +30,8 @@ $draugo = [
 </head>
 <body>
 	<ul>
-		<?php foreach ($mano as $key => $value) {
-			print $value === $draugo[$key] ? "<li>$value</li>" : '';
+		<?php foreach ($bendri as $value) {
+			print "<li>$value</li>";
 		}; ?> 
 			
 	</ul>
